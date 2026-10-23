@@ -1,0 +1,53 @@
+.post-form {
+  box-sizing: border-box;
+  display: grid;
+  gap: 1rem;
+  width: 100%;
+  max-width: 40rem;
+  margin-inline: auto;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+.post-form__field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.post-form__field input,
+.post-form__field textarea,
+.post-form button {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0.75rem;
+  font: inherit;
+}
+
+.post-form__field textarea {
+  resize: vertical;
+}
+
+.post-form :focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
+
+.post-form__error {
+  margin: 0;
+  color: #a31515;
+}
+
+.post-form button {
+  min-height: 2.75rem;
+  cursor: pointer;
+}
+
+.post-form button:disabled {
+  cursor: wait;
+}
+
+@media (min-width: 40rem) {
+  .post-form {
+    padding: 2rem;
+  }
+}

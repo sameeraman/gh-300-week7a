@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": ".",
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "types": ["node", "jest"]
+  },
+  "include": ["api/**/*.ts", "frontend/**/*.tsx", "frontend/**/*.d.ts"],
+  "exclude": []
+}
