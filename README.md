@@ -200,3 +200,4 @@ The methods have asynchronous interfaces for callers, but the SQLite drivers
 driver performs synchronous I/O; this minimal implementation is not intended
 for high-throughput workloads on the main event loop.
 # gh-300-week7a
+# test
